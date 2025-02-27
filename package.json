@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "tsx --import tsx/esm --import ./register.js ./src/index.ts",
+    "start": "node --import ./register.js ./src/index.ts",
     "start2": "tsx --import tsx/esm ./src/index.ts"
   },
   "workspaces": [
@@ -14,6 +14,7 @@
   ],
   "devDependencies": {
     "@types/node": "^22.13.5",
+    "create-esm-loader": "latest",
     "tsx": "^4.19.3",
     "typescript": "^5.5.3"
   },
